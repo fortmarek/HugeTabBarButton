@@ -7,6 +7,8 @@
 
 HugeTabBarButton lets you create huge images for your UITabBarItems.
 
+<img src="https://github.com/fortmarek/HugeTabBarButton/raw/master/hugetabbar_screen.png" width="200">
+
 ## Installation
 ### CocoaPods
 
@@ -37,5 +39,3 @@ tabBarViewController.tabBarItem = hugeTabBarItem
 ```
 
 Basically what you need to do is change the `imageInsets` and `HugeTabBarButton` will then register the tap wherever your image is. Easy! 😎
-
-<img src="https://github.com/fortmarek/HugeTabBarButton/raw/master/hugetabbar_screen.png" width="200">
