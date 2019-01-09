@@ -38,4 +38,9 @@ hugeTabBarItem.title = "Huge"
 tabBarViewController.tabBarItem = hugeTabBarItem
 ```
 
+And init your `UITabBarController` as `HugeTabBarController`:
+```swift
+let tabBarController = HugeTabBarController()
+```
+
 Basically what you need to do is change the `imageInsets` and `HugeTabBarButton` will then register the tap wherever your image is. Easy! 😎
