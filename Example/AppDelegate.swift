@@ -21,18 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let viewControllerOne = UIViewController()
         viewControllerOne.view.backgroundColor = .white
-        viewControllerOne.title = "One"
         viewControllerOne.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
         let viewControllerTwo = UIViewController()
         viewControllerTwo.view.backgroundColor = .white
-        viewControllerTwo.title = "Two"
         let hugeTabBarItem = UITabBarItem()
         hugeTabBarItem.image = UIImage(named: "SwanLarge")
         hugeTabBarItem.imageInsets = UIEdgeInsets(top: -20, left: 0, bottom: 20, right: 0)
+        hugeTabBarItem.title = "Huge"
         viewControllerTwo.tabBarItem = hugeTabBarItem
         let viewControllerThree = UIViewController()
         viewControllerThree.view.backgroundColor = .white
-        viewControllerThree.title = "Three"
         viewControllerThree.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 3)
         tabBarController.viewControllers = [viewControllerOne, viewControllerTwo, viewControllerThree]
         window = UIWindow(frame: UIScreen.main.bounds)

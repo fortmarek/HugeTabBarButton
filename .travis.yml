@@ -1,0 +1,21 @@
+osx_image: xcode10.1
+language: objective-c
+cache:
+  directories:
+  - Carthage
+env:
+  global:
+  - FRAMEWORK_NAME=HugeTabBarButton
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+- carthage bootstrap --platform iOS --cache-builds
+before_deploy:
+- carthage build --no-skip-current --platform iOS --cache-builds
+- carthage archive $FRAMEWORK_NAME
+after_deploy:
+- pod trunk push --skip-import-validation --skip-tests --allow-warnings
+script:
+- set -o pipefail && xcodebuild test -scheme $FRAMEWORK_NAME -destination 'platform=iOS
+  Simulator,name=iPhone XS,OS=12.1' ONLY_ACTIVE_ARCH=YES | xcpretty
+

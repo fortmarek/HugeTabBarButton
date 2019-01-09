@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F86021F121E64C91008E7E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86021F021E64C91008E7E96 /* AppDelegate.swift */; };
-		F86021F321E64C91008E7E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86021F221E64C91008E7E96 /* ViewController.swift */; };
 		F86021F821E64C93008E7E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86021F721E64C93008E7E96 /* Assets.xcassets */; };
 		F86021FB21E64C93008E7E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86021F921E64C93008E7E96 /* LaunchScreen.storyboard */; };
 		F860223A21E66B30008E7E96 /* HugeTabBarButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F860223321E66B30008E7E96 /* HugeTabBarButton.framework */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		F86021ED21E64C91008E7E96 /* HugeTabBarButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugeTabBarButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86021F021E64C91008E7E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F86021F221E64C91008E7E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F86021F721E64C93008E7E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F86021FA21E64C93008E7E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F86021FC21E64C93008E7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				F86021F021E64C91008E7E96 /* AppDelegate.swift */,
-				F86021F221E64C91008E7E96 /* ViewController.swift */,
 				F86021F721E64C93008E7E96 /* Assets.xcassets */,
 				F86021F921E64C93008E7E96 /* LaunchScreen.storyboard */,
 				F86021FC21E64C93008E7E96 /* Info.plist */,
@@ -224,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F86021F321E64C91008E7E96 /* ViewController.swift in Sources */,
 				F86021F121E64C91008E7E96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +420,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HugeTabBarButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +448,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HugeTabBarButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
