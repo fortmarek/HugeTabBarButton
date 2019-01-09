@@ -9,16 +9,9 @@
 import UIKit
 
 open class HugeTabBarController: UITabBarController {
-    // DOES NOT WORK
-    //    var _tabBar = HugeTabBar()
-    //    override var tabBar: UITabBar {
-    //        get { return _tabBar }
-    //    }
-
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        // WORKS
         let tabbar = HugeTabBar()
         self.setValue(tabbar, forKeyPath: "tabBar")
     }

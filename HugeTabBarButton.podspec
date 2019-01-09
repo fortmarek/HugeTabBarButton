@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HugeTabBarButton"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "HugeTabBarButton for huge UITabBar button images"
   s.description  = <<-DESC
   HugeTabBarButton lets you create a tab bar button with as huge of an image as you want
