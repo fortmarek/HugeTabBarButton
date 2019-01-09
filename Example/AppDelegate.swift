@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HugeTabBarButton
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

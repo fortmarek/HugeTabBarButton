@@ -8,27 +8,10 @@
 
 import UIKit
 
-class HugeTabBarController: UITabBarController {
-    // DOES NOT WORK
-//    var _tabBar = HugeTabBar()
-//    override var tabBar: UITabBar {
-//        get { return _tabBar }
-//    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // WORKS
-        let tabbar = HugeTabBar()
-        self.setValue(tabbar, forKeyPath: "tabBar")
-    }
-}
-
 class HugeTabBar: UITabBar {
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        subviews.forEach { print(NSStringFromClass(type(of: $0))) }
         let tabBarButtons: [UIView] = subviews.filter { $0 is UIControl }
-        print(tabBarButtons)
+
         for tabBarButton in tabBarButtons {
             guard isPointInImage(for: tabBarButton, point: point) else { continue }
             return tabBarButton
