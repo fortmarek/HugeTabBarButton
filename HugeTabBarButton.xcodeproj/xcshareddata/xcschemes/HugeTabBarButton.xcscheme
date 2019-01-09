@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F860224521E67308008E7E96"
+               BuildableName = "HugeTabBarButtonTests.xctest"
+               BlueprintName = "HugeTabBarButtonTests"
+               ReferencedContainer = "container:HugeTabBarButton.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F860223221E66B30008E7E96"
+            BuildableName = "HugeTabBarButton.framework"
+            BlueprintName = "HugeTabBarButton"
+            ReferencedContainer = "container:HugeTabBarButton.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

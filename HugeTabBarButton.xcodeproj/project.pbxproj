@@ -14,6 +14,7 @@
 		F860223B21E66B30008E7E96 /* HugeTabBarButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F860223321E66B30008E7E96 /* HugeTabBarButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F860223F21E66B66008E7E96 /* HugeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860220221E64CD9008E7E96 /* HugeTabBar.swift */; };
 		F860224121E66B8E008E7E96 /* HugeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860224021E66B8E008E7E96 /* HugeTabBarController.swift */; };
+		F860224921E67309008E7E96 /* HugeTabBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860224821E67309008E7E96 /* HugeTabBarButtonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F860223221E66B30008E7E96;
 			remoteInfo = HugeTabBarButton;
+		};
+		F860224B21E67309008E7E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F86021E521E64C91008E7E96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86021EC21E64C91008E7E96;
+			remoteInfo = HugeTabBarButton_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,6 +58,9 @@
 		F860223321E66B30008E7E96 /* HugeTabBarButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HugeTabBarButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860223621E66B30008E7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F860224021E66B8E008E7E96 /* HugeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeTabBarController.swift; sourceTree = "<group>"; };
+		F860224621E67308008E7E96 /* HugeTabBarButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeTabBarButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860224821E67309008E7E96 /* HugeTabBarButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeTabBarButtonTests.swift; sourceTree = "<group>"; };
+		F860224A21E67309008E7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F860224321E67308008E7E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +94,7 @@
 			children = (
 				F86021EF21E64C91008E7E96 /* Example */,
 				F860223421E66B30008E7E96 /* HugeTabBarButton */,
+				F860224721E67309008E7E96 /* HugeTabBarButtonTests */,
 				F86021EE21E64C91008E7E96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +104,7 @@
 			children = (
 				F86021ED21E64C91008E7E96 /* HugeTabBarButton_Example.app */,
 				F860223321E66B30008E7E96 /* HugeTabBarButton.framework */,
+				F860224621E67308008E7E96 /* HugeTabBarButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +128,15 @@
 				F860223621E66B30008E7E96 /* Info.plist */,
 			);
 			path = HugeTabBarButton;
+			sourceTree = "<group>";
+		};
+		F860224721E67309008E7E96 /* HugeTabBarButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				F860224821E67309008E7E96 /* HugeTabBarButtonTests.swift */,
+				F860224A21E67309008E7E96 /* Info.plist */,
+			);
+			path = HugeTabBarButtonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +189,24 @@
 			productReference = F860223321E66B30008E7E96 /* HugeTabBarButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F860224521E67308008E7E96 /* HugeTabBarButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860224D21E67309008E7E96 /* Build configuration list for PBXNativeTarget "HugeTabBarButtonTests" */;
+			buildPhases = (
+				F860224221E67308008E7E96 /* Sources */,
+				F860224321E67308008E7E96 /* Frameworks */,
+				F860224421E67308008E7E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F860224C21E67309008E7E96 /* PBXTargetDependency */,
+			);
+			name = HugeTabBarButtonTests;
+			productName = HugeTabBarButtonTests;
+			productReference = F860224621E67308008E7E96 /* HugeTabBarButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +222,10 @@
 					};
 					F860223221E66B30008E7E96 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					F860224521E67308008E7E96 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F86021EC21E64C91008E7E96;
 					};
 				};
 			};
@@ -193,6 +244,7 @@
 			targets = (
 				F86021EC21E64C91008E7E96 /* HugeTabBarButton_Example */,
 				F860223221E66B30008E7E96 /* HugeTabBarButton */,
+				F860224521E67308008E7E96 /* HugeTabBarButtonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +260,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F860223121E66B30008E7E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860224421E67308008E7E96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,6 +293,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F860224221E67308008E7E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860224921E67309008E7E96 /* HugeTabBarButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,6 +308,11 @@
 			isa = PBXTargetDependency;
 			target = F860223221E66B30008E7E96 /* HugeTabBarButton */;
 			targetProxy = F860223821E66B30008E7E96 /* PBXContainerItemProxy */;
+		};
+		F860224C21E67309008E7E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86021EC21E64C91008E7E96 /* HugeTabBarButton_Example */;
+			targetProxy = F860224B21E67309008E7E96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,6 +450,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +469,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +538,44 @@
 			};
 			name = Release;
 		};
+		F860224E21E67309008E7E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HugeTabBarButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.HugeTabBarButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeTabBarButton_Example.app/HugeTabBarButton_Example";
+			};
+			name = Debug;
+		};
+		F860224F21E67309008E7E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HugeTabBarButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.HugeTabBarButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeTabBarButton_Example.app/HugeTabBarButton_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +602,15 @@
 			buildConfigurations = (
 				F860223D21E66B30008E7E96 /* Debug */,
 				F860223E21E66B30008E7E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860224D21E67309008E7E96 /* Build configuration list for PBXNativeTarget "HugeTabBarButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860224E21E67309008E7E96 /* Debug */,
+				F860224F21E67309008E7E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
